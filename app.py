@@ -111,4 +111,4 @@ with placeholder.container():
     st.dataframe(df)
     
 expander = st.expander("More about this project")
-expander.write("This is an interactive dashboard project done by  hkfuoc98@gmail.com/n source code: https://github.com/hkfuoc98/Data-Science-Salary-Dashboard.git")
+expander.write("This is an interactive dashboard project done by  hkfuoc98@gmail.com; source code: https://github.com/hkfuoc98/Data-Science-Salary-Dashboard.git")

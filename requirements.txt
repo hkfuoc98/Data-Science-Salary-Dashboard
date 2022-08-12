@@ -1,5 +1,5 @@
 numpy
 plotly
-scikit-learn
 pandas
 streamlit
+country_converter

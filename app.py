@@ -45,7 +45,11 @@ df = get_data()
 
 # dashboard title
 st.title("Interactive Dashboard about Salary in Data Sciense")
-st.subheader("OK this is my move for the introduction /n Oke")
+st.text_area('Information about This Project', '''
+     Hi, I'm Phuoc; This project is part of my portfolio content on: https://phuochoang.com
+     Dataset: https://www.kaggle.com/datasets/ruchi798/data-science-job-salaries
+     Learning Objectives: Build an interactive dashboard with plotly express; Host with streamlit
+     ''')
 
 # top-level filters
 country_filter = st.selectbox("Select the Job", ['All']+list(pd.unique(df["company_location"])),index=0)
@@ -111,5 +115,5 @@ with placeholder.container():
     st.markdown("### Detailed Data View")
     st.dataframe(df)
     
-expander = st.expander("More about this project")
-expander.write("This is an interactive dashboard project done by  hkfuoc98@gmail.com; My site: https://phuochoang.com; source code: https://github.com/hkfuoc98/Data-Science-Salary-Dashboard.git")
+expander = st.expander("Contact Info")
+expander.write('Email: hkfuoc98@gmail.com')

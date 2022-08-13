@@ -45,6 +45,7 @@ df = get_data()
 
 # dashboard title
 st.title("Interactive Dashboard about Salary in Data Sciense")
+st.subheader("OK this is my move for the introduction /n Oke")
 
 # top-level filters
 country_filter = st.selectbox("Select the Job", ['All']+list(pd.unique(df["company_location"])),index=0)
